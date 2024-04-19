@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="project.css">
+    <!-- Include GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-section">
+            <div class="left-section">
+                Nirbhay's Portfolio
+            </div>
+            <div class="right-section">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="amazon.png" alt="Project 1">
+                <h3>Amazon Clone</h3>
+                <p>The Amazon Clone project is a web application aimed at replicating 
+                    the core functionalities of the Amazon website. It includes 
+                    features such as user authentication, product listings, shopping 
+                    cart, and checkout process. The project was developed using HTML, 
+                    CSS, and JavaScript, and it demonstrates skills in frontend web 
+                    development.</p>
+                <a href="amazon.html">Visit Website</a>
+            </div>
+            <!-- Repeat similar structure for other projects -->
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="project-container">
+            <div class="project-card">
+                <img src="portfolio.png" alt="Portfolio Website">
+                <h3>My Portfolio Website</h3>
+                <p>My Portfolio Website is a showcase of my skills, projects, and experiences as a web developer. It serves as a digital resume and a platform for potential employers or clients to learn more about me and my work.</p>
+                <p>The website features a clean and modern design, with easy navigation to different sections such as Home, About, Projects, and Contact. Each project is showcased with detailed descriptions and, where applicable, links to live demos or GitHub repositories.</p>
+                <p>The website was built using HTML, CSS, and JavaScript, with additional libraries and frameworks such as Bootstrap for responsive design and smooth user interactions.</p>
+                <a href="index.html">Visit Website</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // GSAP Animation
+        gsap.from(".project-card", {
+            duration: 1.5,
+            opacity: 0,
+            y: 50,
+            rotation: -20,
+            skewX: 10,
+            scaleX: 0.8,
+            scaleY: 1.2,
+            ease: "bounce.out",
+            stagger: 0.2,
+            delay: 0.5
+        });
+    </script>
+</body>
+</html>
+    
